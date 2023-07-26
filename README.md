@@ -29,19 +29,29 @@ Es necesario cumplir con todos los pasos descritos a continuación para que pued
  
 
 Descarga todos los archivos mexican-states con sus diferentes extensiones.
+
 Descarga el archivo tiendasCostco_.csv. 
+
 Crea una nueva libreta de Google Colab para programar tu script en Python.
+
 Carga los datos de los Estados de la República Mexicana en un GeoDataFrame.
+
 Carga los datos de la localización de las sucursales de Costco en un DataFrame.
+
 Convierte los datos de la localización de las sucursales de Costco en un GeoDataFrame, creando Puntos a partir de la longitud y latitud de cada sucursal. 
+
 Agrega una columna a los estados que indique la región a la que pertenecen y separa el GeoDataFrame por regiones en lugar de por estados:
 Centro: Tlaxcala, Puebla, CDMX, Morelos, Estado de México e Hidalgo;
 Centro Oeste: Jalisco, Michoacán, Colima, Aguascalientes, Nayarit, Zacatecas, San Luis Potosí, Guanajuato y Querétaro;
 Noreste: Chihuahua, Coahuila, Nuevo León, Tamaulipas y Durango;
 Noroeste: Baja California Norte, Baja California Sur, Sonora y Sinaloa;
 Sureste: Guerrero, Veracruz, Oaxaca, Tabasco, Chiapas, Campeche, Yucatán y Quintana Roo.
+
 Asegura que ambos GeoDataFrames utilicen el CRS epsg=3395 que usa metros como medida de distancia.
+
 Crea un buffer de 120 km alrededor de los puntos de localización de cada sucursal. 
+
 Grafica la intersección de las regiones con los círculos creados a partir de la localización de las sucursales. 
+
 Identifica las regiones en dónde se requiere más cobertura y responde la pregunta: 
  ¿En qué regiones del país (centro, centro oeste, noreste, noroeste, sureste) NO es conveniente abrir una nueva sucursal debido a la falta de cobertura de entregas a domicilio?
